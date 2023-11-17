@@ -1,7 +1,10 @@
+
 .container{
-  margin: auto;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
   width: 50%;
-  border: 1px solid #73AD21;
+  border-radius: 15px;
   background-color: #32746A;
   padding: 10px;
 }
@@ -9,4 +12,29 @@
   float: right;
   background-color: red;
   color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type='checkbox'] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.add-form{
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-form input,
+.add-form button{
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+}
+.add-form button{
+  cursor: pointer;
+  margin-left: 10px;
 }

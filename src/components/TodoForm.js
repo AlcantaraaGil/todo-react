@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 function TodoForm({addTodo}) {
 
-    const [userInput,setUserInput] = useState('New task');
+    const [userInput,setUserInput] = useState();
 
     const handleOnChange = (e) =>{
         setUserInput(e.target.value);
@@ -16,9 +16,9 @@ function TodoForm({addTodo}) {
     }
 
   return (
-    <div style={{margin:20}}>
+    <div className='add-form'>
         <form onSubmit={handleSubmit}>
-            <input type='text' value={userInput} onChange={handleOnChange}/>
+            <input type='text' placeholder='Add a new task' value={userInput} onChange={handleOnChange}/>
             <button>Add todo</button>
         </form>
     </div>

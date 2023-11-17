@@ -6,8 +6,10 @@ import React from 'react'
         return{
             textDecoration: todo.completed?'line-through':'none',
             margin: '20px',
+            padding:'5px',
             border: '1px solid #fff',
-            backgroundColor: '#CCF7E3'
+            backgroundColor: '#CCF7E3',
+            borderRadius:'5px'
         }
     }
 
